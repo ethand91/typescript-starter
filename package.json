@@ -10,6 +10,8 @@
     "build:prod": "webpack --config ./build/webpack.prod.js -p"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
     "@types/node": "^10.9.2",
     "awesome-typescript-loader": "^5.2.0",
     "clean-webpack-plugin": "^0.1.19",
