@@ -3,6 +3,6 @@ module.exports = {
   rules: {
     'scope-case': [0],
     'subject-case': [2, 'always', 'sentence-case'],
-    'header-max-length'* [0],
+    'header-max-length': [0],
   }
 }
