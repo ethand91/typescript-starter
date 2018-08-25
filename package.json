@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.dev.js --inline --progress --profile --colors --watch --mode development --hot",
     "build": "webpack --config ./build/webpack.dev.js",
-    "build:prod": "webpack --config ./build/webpack.prod.js -p"
+    "build:prod": "webpack --config ./build/webpack.prod.js -p",
+    "precommit": "tslint",
+    "commitmsg": "commitlint --edit"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
