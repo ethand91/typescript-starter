@@ -1,0 +1,25 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ethan",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js --inline --progress --profile --colors --watch --mode development --hot",
+    "build": "webpack --config ./build/webpack.dev.js",
+    "build:prod": "webpack --config ./build/webpack.prod.js -p"
+  },
+  "devDependencies": {
+    "@types/node": "^10.9.2",
+    "awesome-typescript-loader": "^5.2.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "source-map-loader": "^0.2.4",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-merge": "^4.1.4"
+  }
+}
