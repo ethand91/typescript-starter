@@ -1,3 +1,3 @@
-function getGreeting (): string {
-  return 'Hello World';
-}
+import { getGreeting } from './greeting';
+
+console.log('greeting', getGreeting());

@@ -28,16 +28,17 @@ module.exports = {
       },
       {
         test: /\.ts$/,
-        exclude: [ /node_modules/ ],
+        exclude: [ /node_modules/, /test/ ],
         use: 'awesome-typescript-loader'
       }
     ]
-  }
+  },
   plugins: [
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '../static/index.html'),
         to: path.resolve(__dirname, '../dist')
       }
-    ]),
+    ])
+  ]
 };
